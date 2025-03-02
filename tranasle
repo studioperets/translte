@@ -1,0 +1,533 @@
+// Hebrew Translation for GoHighLevel
+(function() {
+  // Dictionary - English to Hebrew
+  const translations = {
+    // תפריט ראשי
+    " Launchpad ": "לוח חיבורים",
+    " Dashboard ": "דאשבורד",
+    " Conversations ": "שיחות",
+    " Calendars ": "לוחות שנה",
+    " Contacts ": "אנשי קשר",
+    " Opportunities ": "הזדמנויות",
+    " Payments ": "תשלומים",
+    " Marketing ": "שיווק",
+    " Automation ": "אוטומציה",
+    " Sites ": "אתרים",
+    " Memberships ": "מינויים",
+    " Media Storage ": "אחסון מדיה",
+    " Reputation ": "מוניטין העסק", 
+    " Reporting ": "דוחות נתונים",
+    " App Marketplace ": "חנות אפליקציות",
+    " Mobile App ": "אפליקציה למובייל",
+    " Settings ": "הגדרות",
+    
+    // כללי
+    "Ignore": "התעלם",
+    "All": "הכל",
+    "Save": "שמור",
+    "Pending": "ממתין",
+    "Completed": "הושלם",
+    "Due Date": "תאריך יעד",
+    "Date Added": "תאריך יצירה",
+    "Clear": "נקה",
+    "Send": "שלח",
+    "Loading": "טוען",
+    "Search": "חיפוש",
+    "Delete": "מחק",
+    "Yes": "כן",
+    " No ": "לא",
+    " Cancel ": "ביטול",
+    " Add ": "הוסף",
+    " Add": "הוסף",
+    "Assignee": "ממונה",
+
+    // התחברות
+    "Sign into your account": "התחבר לחשבון שלך",
+    "Password": "סיסמא",
+    "Verify Security Code": "קוד אבטחה לאימות",
+    " Send Security Code ": "שלח קוד אבטחה",
+    
+    // תאריכים ושעות
+    "Feb": "פבר",
+    "Mar": "מרץ",
+    "Sun": "ראשון",
+    "Mon": "שני",
+    "Tue": "שלישי",
+    "Wed": "רביעי",
+    "Thu": "חמישי",
+    "Fri": "שישי",
+    "Sat": "שבת",
+    "Today": "היום",
+    "Day": "יום",
+    "Week": "שבוע",
+    "Month": "חודש",
+    "Start Date": "תאריך התחלה",
+    "End Date": "תאריך סיום",
+    
+    // שדות ונתונים בסיסיים
+    "Name": "שם",
+    "Status": "סטטוס",
+    "Type": "סוג",
+    "Description": "תיאור",
+    "Title": "כותרת",
+    "View": "צפייה",
+    "Filter": "סנן",
+    "Previous": "הקודם",
+    "Next": "הבא",
+    "Import": "ייבוא",
+    "Export": "ייצוא",
+    "Upload": "העלאה",
+    "Remove": "הסר",
+    "Home": "דף הבית",
+    "Agency": "סוכנות",
+    "Agency Dashboard": "דאשבורד סוכנות",
+    "Click here to switch": "לחץ כאן להחלפה",
+
+    // דף אנשי קשר
+    "Last Activity": "פעילות אחרונה",
+    "Conversation began": "השיחה התחילה",
+    " Name ": "שם",
+    " Phone ": "טלפון",
+    " Email ": "דואר אלקטרוני",
+    " Created ": "נוצר ב",
+    " Last Activity ": "פעילות אחרונה",
+    " More Filters ": "עוד מסננים",
+    " Smart Lists ": "רשימות חכמות",
+    " Bulk Actions ": "פעולות בכמויות",
+    " Restore ": "שיחזור",
+    " Tasks ": "משימות",
+    " Manage Smart Lists ": "ניהול רשימות חכמות",
+    " Company ": "חברה",
+    
+    // Contact page עוד מסננים
+    "Business Name": "שם העסק",
+    "Most Used": "פופולרי",
+    "Company Name": "שם חברה",
+    "Full Name": "שם מלא",
+    "Contact Information": "פרטי איש קשר",
+    "Address": "כתובת",
+    "Assigned": "מוקצה ל",
+    "Birth Date": "תאריך לידה",
+    "Created By": "נוצר על ידי",
+    "Created": "נוצר ב",
+    "Tags": "תגיות",
+    "Tag": "תגית",
+    "followers": "עוקבים",
+    "Last Updated By": "עודכן לאחרונה על ידי",
+    "Last Email Clicked Date": "תאריך לחיצה אחרון מייל",
+    "Last Email Opened Date": "תאריך פתיחה אחרון מייל",
+    "Postal Zip Code": "מיקוד דואר",
+    "Source": "מקור",
+    "Street Name": "שם רחוב",
+    "Timezone": "איזור זמן",
+    "Valid Email": "אימייל תקין",
+    
+    // תת תפריט
+    "Add New Company": "הוסף חברה חדשה",
+    "Company List": "רשימת חברות",
+    
+    // פרטי איש קשר נוספים
+    "First Name": "שם פרטי",
+    "Last Name": "שם משפחה",
+    "Email": "דואר אלקטרוני",
+    "Phone": "טלפון",
+    "Date Of Birth": "תאריך לידה",
+    "Contact Source": "מקור איש קשר",
+    "Contact Type": "סוג איש קשר",
+    "Lead": "ליד",
+    "General Info": "מידע כללי",
+    "Street Address": "כתובת רחוב",
+    "City": "עיר",
+    "Country": "מדינה",
+    "State": "מחוז",
+    "Postal Code": "מיקוד",
+    "Website": "אתר",
+    "Time Zone": "איזור זמן",
+    "Additional Info": "מידע נוסף",
+    "Your website": "האתר שלך",
+    "Actions": "פעולות",
+    "CLIENT PORTAL": "פורטל לקוחות",
+    "Courses Offers": "הצעות לקורסים",
+    "Community Groups": "קבוצות קהילה",
+    "DND": "לא להפריע",
+    "Emails": "דואר אלקטרוני",
+    "Created by": "נוצר על ידי",
+    "Created on": "נוצר בתאריך",
+    "View Audit Logs": "הצג הסטורית משתמש",
+    "Notes": "פתקים",
+    "Appointments": "פגישות",
+    "Add": "הוסף",
+    "Search Documents": "חיפוש מסמכים",
+    "Internal": "פנימי",
+    "Sent": "נשלח",
+    "Received": "התקבל",
+    "Contact": "איש קשר",
+    "Please select contacts to remove tags": "בחר אנשי קשר להסרת תגיות",
+    
+    // משימות
+    " New Task ": "משימה חדשה",
+    "Task List": "רשימת משימות",
+    "Sort By": "מיון לפי",
+    "Confirm Delete": "אישור מחיקה",
+    " Edit Task ": "ערוך משימה",
+    "Due date*": "תאריך יעד*",
+    " Add New Task ": "הוסף משימה חדשה",
+    "Assign Task": "הקצה משימה לעובד",
+    "Tasks": "משימות",
+    "Assign To": "מוקצה ל",
+    "Add Task": "הוסף משימה",
+    
+    // הזדמנויות
+    "opportunity": "הזדמנות",
+    " Pipelines ": "תהליכים",
+    " Add opportunity": "הוסף הזדמנות",
+    "Advanced Filters": "פילטרים",
+    "Sort ": "מיון",
+    "Pipelines": "תהליכים",
+    " Create new pipeline ": "צור תהליך חדש",
+    "opportunities": "הזדמנויות",
+    "Opportunity created": "הזדמנות נוצרה",
+    "created in stage": "נוצרה בשלב",
+    "lead": "ליד",
+    "Search Opportunities": "חיפוש הזדמנויות",
+    
+    // חלון ההזדמנות
+    "Opportunity Details": "פרטי הזדמנות",
+    "Book/Update appointment": "לקבוע לעדכן פגישה",
+    "Book/Update Appointment": "לקבוע לעדכן פגישה",
+    "Contact details": "פרטי איש קשר",
+    "Primary Contact Name": "שם איש קשר",
+    "Primary Email": "דואר אלקטרוני",
+    "Primary Phone": "טלפון",
+    "Opportunity details": "פרטי הזדמנות",
+    "Opportunity Name": "שם ההזדמנות",
+    "Pipeline": "תהליך מכירה",
+    "Stage": "שלב",
+    "Owner": "בעלים",
+    "Followers": "עוקבים",
+    "Opportunity Source": "מקור העסקה",
+    "Update": "עדכון",
+    "Cancel": "ביטול",
+    
+    // בתוך הטאב
+    "Calendar": "לוח שנה",
+    "Meeting Location ": "מיקום הפגישה",
+    "Appointment Title ": "תיאור הפגישה",
+    "Book Appointment": "קבע פגישה",
+    "New Note": "פתק חדש",
+    "Add Note": "הוסף פתק",
+
+    // תשלומים ומסמכים
+    " Documents & Contracts ": "חתימה דיגיטלית",
+    "All Documents & Contracts ": "כל המסכמים",
+    " All Documents & Contracts ": "כל המסמכים",
+    "Templates ": "תבניות",
+    " Templates ": "תבניות",
+    "Documents & Contracts Templates": "תבניות למסמכים",
+    "Documents & Contracts": "מסמכים וחוזים",
+    "Create documents and contracts templates for automation and consistency.": "יצירת תבניות למסמכים עבור אוטומציה ועקביות",
+    "Manage and oversee all documents & contracts created for your business.": "ניהול כל המסמכים שנוצרו ונשלחו בעסק",
+    "(Proposals, Estimates & Contracts)": "(הצעות מחיר, מסמכים וחוזים)",
+    "Draft ": "טיוטה",
+    "Waiting for others ": "מחכה לחתימה",
+    "Completed ": "הושלם",
+    "Payments ": "תשלומים",
+    "New": "חדש",
+    "Customer": "לקוח",
+    "Date modified": "תאריך שינוי",
+    "Value": "ערך",
+    "Invoices & Estimates": "חשבוניות והצעות מחיר",
+    "Invoices": "חשבוניות",
+    "Create and manage all invoices generated for your business": "צור ונהל את כל החשבוניות שנוצרו עבור העסק שלך",
+    "Connect at least one payment gateway to start receiving payments": "חבר לפחות שער תשלומים אחד כדי להתחיל לקבל תשלומים",
+    "Integrate Payment Gateway": "שלב שער תשלומים",
+    "Invoice(s) in Draft": "חשבוניות בטיוטה",
+    "Invoice(s) in Due": "חשבוניות לתשלום",
+    "Invoice(s) received": "חשבוניות שהתקבלו",
+    "Invoice(s) Overdue": "חשבוניות באיחור",
+    "Invoice Name": "שם חשבונית",
+    "Invoice Number": "מספר חשבונית",
+    "Issue Date": "תאריך הנפקה",
+    "Amount": "סכום",
+    "No invoices to show yet": "אין חשבוניות להצגה עדיין",
+    "Get started with payments": "התחל עם תשלומים",
+    "Connect your payment provider": "חבר את ספק התשלומים שלך",
+    "Stripe, NMI, Authorize.net, Paypal, Square & Custom Providers": "Stripe, NMI, Authorize.net, Paypal, Square וספקים מותאמים אישית",
+    "Connect your accounting": "חבר את החשבונאות שלך",
+    "Connect Quickbooks": "חבר Quickbooks",
+    "Control who can see your payments": "שליטה במי יכול לראות את התשלומים שלך",
+    "Set permissions for your team members": "הגדר הרשאות לחברי הצוות שלך",
+    
+    // מינויים
+    " Courses ": "קורסים",
+    " Communities ": "קהילות",
+    " Certificates ": "תעודות",
+    " Groups ": "קבוצות",
+    " Products ": "מוצרים",
+    
+    // אפליקציה למובייל
+    "Mobile App": "אפליקציה למובייל",
+    "Download HighLevel Mobile App": "הורידו את המערכת שלכם למובייל",
+    "Get your mobile app from appstore and playstore now!": "התחילו להשתמש ב CRM שלכם גם בסמארטפון",
+    "Copy Link to download app": "העתיקו את הלינק המתאים  appstore/playstore",
+    "Invite users to download app": "הזמן את אחד העובדים להוריד",
+    "Team member": "איש צוות",
+    
+    // הגדרות
+    "Go Back": "חזור",
+    "Business Profile": "פרופיל עסקי",
+    "My Profile": "פרופיל שלי",
+    "Billing": "חיובים",
+    "My Staff": "הצוות שלי",
+    "Custom Fields": "שדות קאסטום",
+    "Custom Values": "ערכים קאסטום",
+    "Business Profile Settings": "הגדרות פרופיל עסקי",
+    "Manage your business profile information & settings": "ניהול מידע והגדרות פרופיל העסק שלך",
+    "General Information": "מידע כללי",
+    "Location ID": "מזהה מיקום",
+    "Business Logo": "לוגו עסקי",
+    "The proposed size is 350px * 180px. No bigger than 2.5 MB": "הגודל המוצע הוא 350px * 180px. לא יותר מ-2.5 MB",
+    "Friendly Business Name": "שם עסק ידידותי",
+    "Legal Business Name": "שם עסק חוקי",
+    "Enter the exact legal business name, as registered with the EIN": "הזן את השם החוקי המדויק של העסק, כפי שרשום ב-EIN",
+    "Business Email": "דוא\"ל עסקי",
+    "Business Phone": "טלפון עסקי",
+    "Branded Domain": "דומיין ממותג",
+    "Add Domain": "הוסף דומיין",
+    "Business Website": "אתר העסק",
+    "Business Physical Address": "כתובת פיזית של העסק",
+    "Postal/Zip Code": "מיקוד",
+    "State / Prov / Region": "מדינה / מחוז / אזור",
+    "Platform Language": "שפת פלטפורמה",
+    "Outbound communication language for custom values": "שפת תקשורת יוצאת עבור ערכים מותאמים אישית",
+
+    // לוח בקרה
+    "Custom JS": "התאמת JS",
+    "Customize the platform with JS": "התאמת הפלטפורמה עם JS",
+    "Custom CSS": "התאמת CSS",
+    "Customize the platform with CSS": "התאמת הפלטפורמה עם CSS",
+    "Phone Integration": "שילוב טלפוניה",
+    "Email Services": "שירותי דואר אלקטרוני",
+    "System Emails": "מיילים מערכתיים",
+    "LC - Premium Triggers": "טריגרים פרימיום",
+    "AI Employee": "עובד AI",
+    "Workflow AI": "תהליכי עבודה AI",
+    "Domain Purchase": "רכישת דומיין",
+    "Auto-Complete Address": "השלמת כתובת אוטומטית",
+    "Private Integrations": "אינטגרציות פרטיות",
+    "Affiliates": "שותפים",
+    "Custom Menu Links": "קישורי תפריט מותאמים",
+    "Stripe": "סטרייפ",
+    "API Keys": "מפתחות API",
+    "Compliance": "תאימות",
+    "Labs": "מעבדות",
+    "Save Changes": "שמור שינויים",
+    
+    // ממשקים אחרים - ממשק קהילה, הגדרות אימייל, שדות וכו'
+    "Announcements": "הודעות",
+    "Discussion": "דיונים",
+    "Learning": "למידה",
+    "Members": "חברים",
+    "Events": "אירועים",
+    "Leaderboard": "לוח מובילים",
+    "About": "אודות",
+    "Chat": "צ'אט",
+    "What's on your mind": "מה בראש שלך",
+    "No posts found": "לא נמצאו פוסטים",
+    "Posts": "פוסטים",
+    "Admin": "מנהל",
+    "Public Group": "קבוצה ציבורית",
+    "No activity to show": "אין פעילות להצגה",
+    "Leaderboard (30-days)": "לוח מובילים (30 ימים)",
+    "See all leaderboards": "צפה בכל לוחות המובילים",
+    "INVITE MEMBERS": "הזמנת חברים",
+    "Morning": "בוקר",
+    "Evening": "ערב",
+    "Public": "ציבורי",
+    "Private": "פרטי",
+    "Group": "קבוצה",
+    
+    // הגדרות אימייל
+    "Email Settings": "הגדרות אימייל",
+    "Enable or disable email notifications for your group members and customise the emails they receive": "הפעל או בטל התראות אימייל לחברי הקבוצה שלך והתאם אישית את האימיילים שהם מקבלים",
+    "Group Invitation Email": "אימייל הזמנה לקבוצה",
+    "Send an invite email when a member is added to a group": "שלח אימייל הזמנה כאשר חבר מתווסף לקבוצה",
+    "Joined the group (User)": "הצטרף לקבוצה (משתמש)",
+    "Group Membership Status Email": "אימייל סטטוס חברות בקבוצה",
+    "Manage emails related to group membership approval or rejection": "נהל אימיילים הקשורים לאישור או דחיית חברות בקבוצה",
+    "Approved (User)": "אושר (משתמש)",
+    "Declined (User)": "נדחה (משתמש)",
+    "New Member Request (Admin)": "בקשת חבר חדש (מנהל)",
+    "Declined/Removed by Admin (User)": "נדחה/הוסר על ידי מנהל (משתמש)",
+    "Added to Private Channel (User)": "התווסף לערוץ פרטי (משתמש)",
+    "General Group Emails": "אימיילים כלליים לקבוצה",
+    "Customise general notifications for comments, tags, posts, and likes": "התאם אישית התראות כלליות עבור תגובות, תיוגים, פוסטים ולייקים",
+    "New Comment On Post": "תגובה חדשה לפוסט",
+    "New Comment Reply": "תגובה חדשה לתגובה",
+    "Tagged In Post": "תויגת בפוסט",
+    "Default Template": "תבנית ברירת מחדל",
+    
+    // ניהול שדות
+    "All Fields": "כל השדות",
+    "Folders": "תיקיות",
+    "Deleted Fields": "שדות שנמחקו",
+    "Field Name": "שם השדה",
+    "Object": "אובייקט",
+    "Company Info": "מידע חברה",
+    "Unique Key": "מפתח ייחודי",
+    "Group By": "קבץ לפי",
+    "Page Size": "גודל דף",
+    "Showing 1 to 10 of 10": "מציג 1 עד 10 מתוך 10 תוצאות",
+    "Manage Fields": "ניהול שדות",
+    "Fields": "שדות",
+    
+    // כלי מפתח
+    "DevTools is now available in Hebrew!": "כלי המפתח זמינים כעת בעברית!",
+    "Always match Chrome's language": "התאם תמיד לשפה של כרום",
+    "Switch DevTools to Hebrew": "החלף את כלי המפתח לעברית",
+    "Don't show again": "אל תציג שוב",
+    "Elements": "אלמנטים",
+    "Console": "קונסולה",
+    "Sources": "מקורות",
+    "Network": "רשת",
+    "Performance": "ביצועים",
+    "Memory": "זיכרון",
+    "Application": "אפליקציה",
+    "Security": "אבטחה",
+    "Lighthouse": "מגדלור",
+    "Recorder": "מקליט",
+    "Issues": "בעיות",
+    "AI assistance": "סיוע AI",
+    "Default levels": "רמות ברירת מחדל",
+    "Group by kind": "קבץ לפי סוג",
+    "Include third-party cookie issues": "כלול בעיות עוגיות צד שלישי",
+    
+    // שיחות
+    "Conversations": "שיחות",
+    "Unread": "לא נקרא",
+    "Recents": "אחרונים",
+    "Starred": "מסומן בכוכב",
+    "RESULTS": "תוצאות",
+    "Latest": "אחרון",
+    "Type a message": "הקלד הודעה",
+    "Active Automations": "אוטומציות פעילות",
+    "OFF": "כבוי",
+    "Calls & Voicemails": "שיחות ותא קולי",
+    "Text Messages": "הודעות טקסט",
+    "WhatsApp": "וואטסאפ",
+    "Incoming": "נכנס",
+    "Facebook message": "הודעת פייסבוק",
+    "Welcome,": "ברוך הבא,",
+    "Quick search": "חיפוש מהיר",
+    
+    // אוטומציה ותהליכי עבודה
+    "Automations": "אוטומציות",
+    "Workflows": "תהליכי עבודה",
+    "Content AI": "תוכן AI",
+    "Global Workflow": "תהליך עבודה גלובלי",
+    "Workflow List": "רשימת תהליכי עבודה",
+    "Create Folder": "צור תיקייה",
+    "Create Workflow": "צור תהליך עבודה",
+    "All Workflows": "כל תהליכי העבודה",
+    "Needs Review": "דורש בדיקה",
+    "Deleted": "נמחק",
+    "Smart List": "רשימה חכמה",
+    "Customize List": "התאם רשימה",
+    "Total Enrolled": "סה\"כ נרשמו",
+    "Active Enrolled": "נרשמים פעילים",
+    "Last Updated": "עודכן לאחרונה",
+    "Created On": "נוצר ב",
+    "Stats": "סטטיסטיקה",
+    "Triggers & Actions": "טריגרים ופעולות",
+    "Connect": "חיבור",
+
+    // אחרים - משפך
+    "Funnel": "משפך",
+    "Build funnels to generate leads, appointments and receive payment": "בנה משפכים ליצירת לידים, פגישות וקבלת תשלום",
+    "Start by creating a funnel": "התחל ביצירת משפך",
+    "your funnels and folders will live here. Start by creating your first": "המשפכים והתיקיות שלך יופיעו כאן. התחל ביצירת הראשון"
+  };
+  
+  // Function to translate text
+  function translateText(text) {
+    if (!text || typeof text !== "string") return text;
+    
+    let result = text;
+    for (const [eng, heb] of Object.entries(translations)) {
+      if (result.includes(eng)) {
+        try {
+          result = result.replace(new RegExp(eng.replace(/[-\\^$*+?.()|[\]{}]/g, "\\$&"), "g"), heb);
+        } catch (error) {
+          console.log("Error translating: " + eng);
+        }
+      }
+    }
+    return result;
+  }
+  
+  // Function to translate all text nodes in page
+  function translatePage() {
+    if (!document || !document.body) return;
+    
+    // Elements to skip
+    const excludeNodeNames = ["SCRIPT", "STYLE", "CODE", "PRE"];
+    
+    // Check if node should be translated
+    function shouldTranslateNode(node) {
+      if (node.nodeType !== Node.TEXT_NODE) return false;
+      if (!node.nodeValue || !node.nodeValue.trim()) return false;
+      
+      let parent = node.parentNode;
+      while (parent) {
+        if (excludeNodeNames.includes(parent.nodeName)) return false;
+        if (parent.hasAttribute && parent.hasAttribute("data-no-translate")) return false;
+        if (parent.classList && (
+          parent.classList.contains("CodeMirror") || 
+          parent.classList.contains("code-editor") || 
+          parent.classList.contains("js-code") ||
+          parent.classList.contains("ace_editor")
+        )) return false;
+        
+        parent = parent.parentNode;
+      }
+      
+      return true;
+    }
+    
+    // Collect all text nodes
+    const walker = document.createTreeWalker(
+      document.body,
+      NodeFilter.SHOW_TEXT,
+      { acceptNode: node => shouldTranslateNode(node) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT }
+    );
+    
+    const textNodes = [];
+    let currentNode;
+    while (currentNode = walker.nextNode()) {
+      textNodes.push(currentNode);
+    }
+    
+    // Translate each text node
+    textNodes.forEach(node => {
+      try {
+        const originalText = node.nodeValue;
+        const translatedText = translateText(originalText);
+        if (translatedText !== originalText) {
+          node.nodeValue = translatedText;
+        }
+      } catch (error) {
+        console.log("Error translating node:", error);
+      }
+    });
+  }
+  
+  // Monitor DOM changes
+  function observeChanges() {
+    if (!window.MutationObserver) return;
+    
+    const observer = new MutationObserver(mutations => {
+      let shouldTranslate = false;
+      
+      for (const mutation of mutations) {
+        if (mutation.type === "childList" || mutation.type === "characterData") {
+          shouldTranslate =
